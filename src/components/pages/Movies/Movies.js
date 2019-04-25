@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import './Product.css'
+import './Movies.css'
 
 class Category extends Component {
     constructor() {
@@ -16,7 +16,7 @@ class Category extends Component {
     }
 
     getData() {
-        const url = "https://api.themoviedb.org/3/movie/6c1e1b431886ead5f7c4051e68d18ed9/lists?api_key=6c1e1b431886ead5f7c4051e68d18ed9&language=en-US&page=2&include_image_language=1";
+        const url = "https://api.themoviedb.org/3/movie/6c1e1b431886ead5f7c4051e68d18ed9/lists?api_key=6c1e1b431886ead5f7c4051e68d18ed9&language=en-US&page=2";
         axios.get(url)
             .then((data) => {
                 // this.state.movies = data;
